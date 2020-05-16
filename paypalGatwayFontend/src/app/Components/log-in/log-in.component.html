@@ -1,0 +1,22 @@
+<div class="card ">
+  <div class="card-body">
+    <h5 class="card-title text-center">LogIn</h5>
+    <div class="col bg-dark"><hr></div>  
+    <form [formGroup]="loginForm">
+      <div>
+        <input type="email" class="form-control col-9" id="InputEmail1"  formControlName="email" placeholder="Email">
+        <!-- <label>Email</label> -->
+      </div>
+  
+      <div>
+        <input type="password" class="form-control col-9" id="InputPassword"  formControlName="password" placeholder="Password">
+        <!-- <label>Password</label> -->
+      </div>
+  
+      <div class="text-center">
+        <button class="btn btn-primary " (click)="onSubmit()">Submit</button>
+      </div>
+
+    </form>
+  </div>
+</div>

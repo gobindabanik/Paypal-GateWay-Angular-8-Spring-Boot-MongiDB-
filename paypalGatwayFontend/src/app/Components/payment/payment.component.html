@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-body">
+    <p class="text-center" style="font-size: medium; font-weight: bold;">Make Payment</p>
+    <!-- <div class="container-fluid col-6" >  -->
+      <form [formGroup]="orderForm">
+        <div class=" "> 
+          <div class="col-9">
+            <div class="label">Total Amount:</div>   
+            <input type="number" class="form-control"  formControlName="price" placeholder="Amount" /> 
+          </div>
+        
+          <div class="col-9">
+            <div class="label">Currency:</div>   
+            <input type="text" class="form-control"  formControlName="currency" placeholder="currency" /> 
+          </div>
+        
+          <div class="col-9">
+            <div class="label">Method:</div>   
+            <input type="text" class="form-control"  formControlName="method" placeholder="method" /> 
+          </div>
+        
+          <div class="col-9">
+            <div class="label">Intent:</div>   
+            <input type="text" class="form-control"  formControlName="intent" placeholder="intent" /> 
+          </div>
+        
+          <div class="col-9">
+            <div class="label">Description:</div>   
+            <input type="text" class="form-control"  formControlName="description" placeholder="description" /> 
+          </div>
+        
+          <div class="col-12 text-center">
+            <button class="mt-3 btn btn-sm py-0 btn-success ml-2 justify-content-center" (click)="onSubmit()"> Check Out</button>
+          </div>
+        </div>  
+      </form>
+    <!-- </div> -->
+  </div>
+</div>
